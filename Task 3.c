@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#define MAX 100
 struct Date {
     int day;
     int month;
@@ -17,7 +16,7 @@ struct Employee {
     struct Date joining_date;
     int years_experience;
 };
-struct Employee emp[MAX];
+struct Employee emp[100];
 int count = 0;
 int calculate_experience(struct Date d) {
     int current_year = 2025;
@@ -184,4 +183,5 @@ int main() {
     }
     return 0;
 }
+
 
